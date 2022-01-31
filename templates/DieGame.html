@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<body>
+
+    
+
+<h1>Dice Game</h1>
+<p>Refresh to cast  2 die.</p>
+
+<table>
+    <thead>
+        <tr><th>Die 1</th><th>Die 2</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>{{die1.GetFaceValue()}}</td><td>{{die2.GetFaceValue()}}</td></tr>
+        <tr><td><img src="{{url_for('static', filename = die1.GetPicLink())}}"></td><td><img src="{{url_for('static', filename = die2.GetPicLink())}}"></td></tr>
+    </tbody>
+</table>
+
+</body>
+</html>
